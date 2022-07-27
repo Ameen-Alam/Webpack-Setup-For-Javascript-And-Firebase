@@ -1,12 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
-
 module.exports = {
     mode: 'development',
     devtool: 'eval-source-map',
     entry: {
-        bundle: path.resolve(__dirname, './src/index.js',) 
+        bundle: path.resolve(__dirname, './src/index.js',)
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -23,7 +22,7 @@ module.exports = {
         open: true,
         hot: true,
         compress: true,
-        historyApiFallback: true, 
+        historyApiFallback: true,
     },
     module: {
         rules: [
@@ -50,5 +49,5 @@ module.exports = {
             template: 'src/index.html'
         }),
         new WebpackAnalyzerPlugin(),
-    ],
+],
 };
