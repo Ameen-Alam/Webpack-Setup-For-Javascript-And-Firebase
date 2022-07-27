@@ -10,12 +10,7 @@ git clone https://github.com/Ameen-Alam/Webpack-Setup-For-Javascript-And-Firebas
 
 ```npm i```
 
-```npm install --global serve```
-
-```npm run build```
-
-```serve dist/ ```
-
+```npm start```
 
 ----------------------------------------------
 
@@ -26,31 +21,38 @@ git clone https://github.com/Ameen-Alam/Webpack-Setup-For-Javascript-And-Firebas
 
 - Download nodejs https://nodejs.org/en/download/
 
-```npm install --global serve```
-
 #### 2- Open the project and run the following commands.
 
 ```npm init -y```
 
-```npm i firebase webpack webpack-cli```
+```npm i firebase```
 
-```create a directory src```
+```npm i -D webpack-dev-server webpack webpack-cli html-webpack-plugin babel-loader @babel/core @babel/preset-env```
 
-```create file index.js in src```
+- create a directory src
 
-```create a directory dist```
+- create file ```index.js``` and ```index.html``` in src
 
-```create a file index.html in dist```
+- Create a file ```webpack.config.js``` and copy past the code from my git repo.
 
 #### 3- Go to package.json file
 
-- add this line scripts object
+- add this line in  scripts object
 
-``` "build": "webpack --mode production"```
+```   "scripts": {```
+```    "build": "webpack",```
+```    "start": "webpack serve"```
+```  },```
 
 
- #### 4- And run the following commands
+#### 4- And run the following commands
 
-```npm run build```
+To build the app
 
-```serve dist/```
+```npm run build``` 
+
+*OR*
+
+To run the app
+
+```npm start``` 
