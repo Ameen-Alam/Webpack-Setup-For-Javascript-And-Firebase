@@ -56,3 +56,11 @@ To build the app
 To run the app
 
 ```npm start``` 
+
+
+
+---------------------------------
+
+#### Webpack 5 Crash Course | Frontend Development Setup
+
+https://youtu.be/IZGNcSuwBZs
