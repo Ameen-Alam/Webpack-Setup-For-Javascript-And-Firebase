@@ -1,32 +1,32 @@
 # Webpack Setup For Javascript And Firebase
 
-- Node install
+1- Node install
 
-npm install --global serve
+  npm install --global serve
 
-- Go to project directory and open cmd
+2- Go to project directory and open cmd
 
-npm init -y
+  npm init -y
 
-npm i firebase webpack webpack-cli
+  npm i firebase webpack webpack-cli
 
-create a directory src
+  create a directory src
 
-create file index.js in src
+  create file index.js in src
 
-create a directory dist
+  create a directory dist
 
-create a file index.html in dist
+  create a file index.html in dist
 
-- Go to package.json file
+3- Go to package.json file
 
-add this line scripts object
+  add this line scripts object
 
-"build": "webpack --mode production"
+  "build": "webpack --mode production"
 
 
-- Run this command
+ 4- Run this command
 
-npm run build
+  npm run build
 
-serve dist/
+  serve dist/
