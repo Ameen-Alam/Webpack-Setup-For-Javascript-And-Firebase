@@ -51,7 +51,7 @@ To build the app
 
 ```npm run build``` 
 
-*OR*
+**OR**
 
 To run the app
 
