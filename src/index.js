@@ -1,5 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, onAuthStateChanged } from "firebase/auth"
+import "./index.css";
+
 
 import logo from './assets/logo.svg'
 const logImg = document.getElementById("logo");

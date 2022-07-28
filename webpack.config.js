@@ -39,8 +39,12 @@ module.exports = {
             {
                 test: /\.(png|svg|jpeg|jpg|gif)$/i,
                 type: 'asset/resource'
-            }
-        ]
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -48,6 +52,6 @@ module.exports = {
             filename: "index.html",
             template: 'src/index.html'
         }),
-        new WebpackAnalyzerPlugin(),
+        // new WebpackAnalyzerPlugin(),
 ],
 };
